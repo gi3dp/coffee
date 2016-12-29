@@ -1,0 +1,46 @@
+<template name="newinformation">
+    <style>
+        .nostyle{
+            padding: 0px;
+            margin: 0px;
+        }
+        #productwhere{
+            text-align: right;
+            color: #273e80;
+            line-height: 35px;
+            font-family: 微软雅黑;
+        }
+        #paging{
+            text-align: right;
+        }
+    </style>
+    <div class="container-fruid nostyle">
+        <div class="row nostyle">
+            <div class="col-md-1 hidden-sm hidden-xs " ></div>
+            <div class="col-md-2 col-sm-3 hidden-xs "  ></div>
+            <div class="col-md-7 col-sm-9 col-xs-12 " >
+                <div class="row nostyle">
+                    <div class="col-xs-11 nostyle" id="productwhere">
+                        <span class="glyphicon glyphicon-home"></span> 产品中心
+                        <span class="glyphicon glyphicon-play"></span> 全部产品
+                    </div>
+                </div>
+                {{>informationsList}}
+                <div class="col-xs nostyle" id="paging">
+                    <nav>
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 hidden-sm hidden-xs " ></div>
+        </div>
+    </div>
+</template>

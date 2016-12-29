@@ -1,0 +1,142 @@
+<template name="customerService">
+    <style>
+        .nostyle{
+            padding: 0px;
+            margin: 0px;
+        }
+        #productwhere{
+            text-align: right;
+            color: #273e80;
+            line-height: 35px;
+            font-family: 微软雅黑;
+        }
+        #helpword{
+            color: #323232;
+            font-size: 32px;
+            text-align: center;
+            margin-top: 55px;
+        }
+        .yourproduct{
+            text-align: center;
+            vertical-align: middle;
+            line-height: 70px;
+            font-size: 20px;
+            font-family: 微软雅黑;
+        }
+        .propicy{
+            text-align: center;
+            font-family: 微软雅黑;
+            margin-top: 10px;
+        }
+        .onlineke{
+            margin-top: 30px;
+        }
+        .onlineke1{
+            /*margin-left: 26%;*/
+            height: 60px;
+            background-color: #e5e5e5;
+            width: 100px;
+            /*text-align: center;*/
+            padding-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+    <div class="container" >
+        <div class="col-md-2 col-sm-2 hidden-xs "></div>
+        <div class="col-md-8 col-sm-8 col-xs-12 nostyle">
+            <div class="row nostyle">
+                <div class="col-xs-11 nostyle" id="productwhere">
+                    <span class="glyphicon glyphicon-home"></span> 产品中心
+                    <span class="glyphicon glyphicon-play"></span> 全部产品
+                </div>
+            </div>
+            <div class="row nostyle" >
+                <div class="=col-xs-12 nostyle img-responsive" style="background-image: url('/images/kfpic1.png');height: 310px">
+                    <div class="row nostyle">
+                        <div class="col-xs-12 nostyle">
+                            <h2 id="helpword">您需要什么帮助？</h2>
+                        </div>
+                    </div>
+                    <div class="row nostyle" style="margin-top: 15px">
+                        <div class="col-md-3 col-sm-3 hidden-xs"></div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 nostyle">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-lg" value="输入产品型号或者你遇到的问题">
+                                <span class="input-group-addon btn btn-primary">搜索</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row nostyle yourproduct" >请选择您的产品</div>
+                <div class="row nostyle" >
+                    <div class="col-sm-1 hidden-xs"></div>
+                    <div class="col-md-2 col-sm-2 col-xs-4 propicy">
+                        <div><img src="/images/kfpic2.png"/></div>
+                        <div style="margin-top: 8px">3D打印机</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-4 propicy">
+                        <div><img src="/images/kfpic2.png"/></div>
+                        <div style="margin-top: 8px">3D打印机</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-4 propicy">
+                        <div><img src="/images/kfpic2.png"/></div>
+                        <div style="margin-top: 8px">3D打印机</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-4 propicy">
+                        <div><img src="/images/kfpic2.png"/></div>
+                        <div style="margin-top: 8px">3D打印机</div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-xs-4 propicy">
+                        <div><img src="/images/kfpic2.png"/></div>
+                        <div style="margin-top: 8px">3D打印机</div>
+                    </div>
+                    <div class="col-sm-1 hidden-xs"></div>
+                </div>
+                <div class="row nostyle yourproduct" >服务与支持</div>
+                <div class="row nostyle " >
+                    <div class="col-xs-8 nostyle">
+                        <img class="img-responsive" src="/images/prowtpic1.png"/>
+                    </div>
+                    <div class="col-xs-4 nostyle">
+                        <img class="img-responsive" src="/images/prowtpic2.png"/>
+                    </div>
+                </div>
+                <div class="row nostyle " >
+                    <div class="col-xs-4 nostyle">
+                        <img class="img-responsive" src="/images/prowtpic3.png"/>
+                    </div>
+                    <div class="col-xs-4 nostyle">
+                        <img class="img-responsive" src="/images/prowtpic4.png"/>
+                    </div>
+                    <div class="col-xs-4 nostyle">
+                        <img class="img-responsive" src="/images/prowtpic5.png"/>
+                    </div>
+                </div>
+                <div class="row nostyle">
+                    <div class="col-sm-1 hidden-xs nostyle "></div>
+                    <div class="col-xs-2 nostyle onlineke">
+                        <div class="onlineke1 nostyle">
+                            在线客服<span class="glyphicon glyphicon-user" style="margin-left: 8px"></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 nostyle "></div>
+                    <div class="col-xs-1 nostyle "></div>
+                    <div class="col-xs-2 nostyle onlineke">
+                        <div class="onlineke1 nostyle">
+                            在线客服<span class="glyphicon glyphicon-user" style="margin-left: 8px"></span>
+                        </div>
+                    </div>
+                    <div class="col-xs-1 nostyle "></div>
+                    <div class="col-xs-1 nostyle "></div>
+                    <div class="col-xs-2 nostyle onlineke">
+                        <div class="onlineke1 nostyle">
+                            在线客服<span class="glyphicon glyphicon-user" style="margin-left: 8px"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 hidden-xs nostyle "></div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 hidden-xs "></div>
+        </div>
+    </div>
+</template>

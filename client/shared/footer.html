@@ -1,25 +1,104 @@
 <template name="footer">
-	<footer>
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-md-offset-2 col-md-8">
-					<ul class="social-networks">
-						{{#each socialMedia}}
-						<li><a href="{{url}}" target="_blank">
-						<span class="fa-stack fa-2x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-{{icon}} fa-stack-1x fa-inverse"></i>
-						</span></a>
-						</li>
-						{{/each}}
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					{{{Config.footer}}}
-				</div>
-			</div>
-		</div>
-	</footer>
+    <div id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 hidden-xs">
+                    <div class="col-lg-10 col-lg-offset-1 col-sm-12">
+                        <div class="box">
+                            <div class="box col-sm-2">
+                                <h4>产品中心</h4>
+                                <ul>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                </ul>
+                            </div>
+                            <div class="box col-sm-2">
+                                <h4>合作伙伴</h4>
+                                <ul>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                </ul>
+                            </div>
+                            <div class="box col-sm-2">
+                                <h4>客户服务</h4>
+                                <ul>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                </ul>
+                            </div>
+                            <div class="box col-sm-2">
+                                <h4>新闻动态</h4>
+                                <ul>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                </ul>
+                            </div>
+                            <div class="box col-sm-2">
+                                <h4>恒达社区</h4>
+                                <ul>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">联系我们</a></li>
+                                    <li><a href="">关于我们</a></li>
+                                </ul>
+                            </div>
+                            <div class="box col-sm-2">
+                                <h4>关于我们</h4>
+                                <ul>
+                                    <li><span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;65918203</li>
+                                    <li><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;play-3d@213.com</li>
+                                    <li><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;昆明理工大学呈贡校区<br/>&nbsp;&nbsp;&nbsp;&nbsp;计算机重点实验室4楼</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 col-sm-12">
+                    <div class="col-sm-offset-4 col-sm-4" style="height: 45px">
+                        <address>Copyright © 2015 云南滇中恒达科技有限公司</address>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-2">
+                        <div class="icon" style="height: 20px;">
+                            <img src="images/search.png" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="images/sign-in.png" alt="">
+                        </div>
+                        <div class="icon">
+                            <img src="images/speakchange.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #footer {
+            text-align: left;
+            font-family: "Arial Black";
+            padding-top: 15px;
+        }
+
+        .box {
+            margin: auto;
+        }
+
+        .box ul {
+            margin-bottom: 20px;
+            padding: 0;
+            list-style: none;
+            margin-top: 20px;
+        }
+        address {
+            text-align: center;
+        }
+    </style>
 </template>

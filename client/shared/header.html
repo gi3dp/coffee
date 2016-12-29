@@ -1,0 +1,75 @@
+<template name="header">
+    <div id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-12">
+                    <div id="logo" class="col-md-offset-1 col-md-2 col-xs-4">
+                        <img src="images/new-logo.png" alt="">
+                    </div>
+                    <div id="other" class="col-md-offset-7 col-md-2 col-xs-offset-4 col-xs-4" style="height: 80px">
+                        <div id="sign-in">
+                            <div class="icon">
+
+                                <div class="dropdown">
+                                    <img id="speakchange" src="images/speakchange.png" alt="" onclick="menu.style.display='block';">
+                                        <!--<div class="btn-group nostyle">-->
+                                            <!--<button type="button" class="btn btn-default jq-dropdown-toggle nostyle" data-toggle="dropdown">-->
+                                                <!--Action <span class="caret"></span>-->
+                                            <!--</button>-->
+                                    <div id="menu">
+                                            <ul class="nostyle" role="menu">
+                                                <li><input id="changeCN" type="button" value="简体" onclick="changeCN()"></li>
+                                                <li><input id="changeTW" type="button" value="繁体" onclick="changeTW()"></li>
+                                                <li><input id="changeEN" type="button" value="英文" onclick="changeEN()"></li>
+                                            </ul>
+                                    </div>
+                                        <!--</div>-->
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <img src="images/sign-in.png" alt="">
+                            </div>
+                            <div class="icon">
+                                <img src="images/search.png" alt="">
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <style>
+        #menu{
+            display: none;
+        }
+        /*#menu li{*/
+            /*float: left;*/
+        /*}*/
+    </style>
+    <script>
+        function changeCN() {
+            document.getElementById("changeCN");
+            TAPi18n.setLanguage('cn');
+            var obd=document.getElementById("body");
+            obd.style.fontFamily="'Microsoft YaHei',SimSun,Verdana,simsun,sans-serif";
+            document.getElementById("nav-cooperativePartner").style.display="inline";
+            document.getElementById("nav-customerService").style.display="inline";
+        }
+        function changeEN() {
+            document.getElementById("changeEN");
+            TAPi18n.setLanguage('en');
+            var obd=document.getElementById("body");
+            obd.style.fontFamily="'Helvetica Neue', Helvetica, Arial, sans-serif";
+            document.getElementById("nav-cooperativePartner").style.display="none";
+            document.getElementById("nav-customerService").style.display="none";
+        }
+        function changeTW() {
+            document.getElementById("changeTW");
+            TAPi18n.setLanguage('tw');
+            var obd=document.getElementById("body");
+            obd.style.fontFamily="'Microsoft JhengHei',SimSun，Verdana,sans-serif";
+            document.getElementById("nav-cooperativePartner").style.display="inline";
+            document.getElementById("nav-customerService").style.display="inline";
+        }
+    </script>
+</template>

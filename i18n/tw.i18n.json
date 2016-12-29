@@ -1,0 +1,27 @@
+{
+  "nav":{
+    "mainPage":"首頁",
+    "productCenter":"產品中心",
+    "cooperativePartner":"合作夥伴",
+    "customerService":"客戶服務",
+    "newinformation":"新聞動態",
+    "community":"恆達社區",
+    "aboutus":"關於我們"
+  },
+  "mainPage":{
+    "h1":{
+      "new":"新聞資訊",
+      "product":"產品中心",
+      "service":"客戶服務",
+      "application":"教學應用"
+    },
+    "service":{
+      "printer":"3D列印機",
+      "Tutorials":"綫上課程",
+      "Training":"綫下培訓",
+      "Scan":"掃描儀",
+      "Software":"軟體",
+      "buy":"購買"
+    }
+  }
+}
