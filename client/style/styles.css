@@ -1,0 +1,22 @@
+/*@base-font-family :'Microsoft YaHei',SimSun，Tahoma,Verdana,STHeiTi,simsun,sans-serif;*/
+/*@taiwan-base-font-family :'Microsoft JhengHei',SimSun，Tahoma,Verdana,STHeiTi,simsun,sans-serif;*/
+#header {
+  background-color: #fff !important;
+}
+#nav {
+  background-color: #2e3238 !important;
+}
+#nav li {
+  font-size: 18px !important;
+}
+#nav li a {
+  color: #fff !important;
+}
+#nav li a:hover {
+  color: #fff !important;
+  background-color: #0d347e !important;
+}
+#nav li a:focus {
+  color: #fff !important;
+  background-color: #0d347e !important;
+}

@@ -1,0 +1,43 @@
+<template name="nav">
+    <div id="nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-10">
+                    <div class="nav-box">
+                        <ul class="nav nav-show">
+                            <li class="active" role="presentation"><a href="/">{{_ 'nav.mainPage'}}</a></li>
+                            <li id="nav-product" role="presentation"><a href="/product">{{_ 'nav.productCenter'}}</a></li>
+                            <li id="nav-cooperativePartner" role="presentation"><a href="/cooperativePartner">{{_ 'nav.cooperativePartner'}}</a></li>
+                            <li id="nav-customerService" role="presentation"><a href="/customerService">{{_ 'nav.customerService'}}</a></li>
+                            <li role="presentation"><a href="/newinformation">{{_ 'nav.newinformation'}}</a></li>
+                            <li id="nav-community" role="presentation"><a href="/community">{{_ 'nav.community'}}</a></li>
+                            <li role="presentation"><a href="/aboutus">{{_ 'nav.aboutus'}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12"
+                 style="background:url(images/bc-1.png);background-repeat:repeat-x;width: 100%;height: 95px;"></div>
+        </div>
+    </div>
+    <style type="text/css">
+        #nav {
+            margin: auto;
+            text-align: center;
+        }
+        .nav-box {
+            float: none;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+        }
+        .nav-show li {
+            float: left;
+        }
+    </style>
+</template>

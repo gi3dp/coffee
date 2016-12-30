@@ -9,6 +9,14 @@
 				{ label: 'Title', name: 'title' }
 				{ label: 'User', name: 'author()', template: 'adminUserCell' }
 			]
+		News:
+			color: 'purple'
+			icon: 'newspaper-o'
+			extraFields: ['owner']
+			tableColumns: [
+				{ label: 'Title', name: 'title' }
+				{ label: 'User', name: 'author()', template: 'adminUserCell' }
+			]
 		Comments:
 			color: 'green'
 			icon: 'comments'
