@@ -3,6 +3,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
+					<!-- 对应下面的addPost favoritesSiderbar及 posts Template -->
 					{{> addPost}}
 					{{> favoritesSidebar}}
 				</div>
@@ -18,9 +19,11 @@
 	<div class="template-add-post">
 		<div class="panel panel-default">
 				<div class="panel-heading">
+					<!-- i18n的翻译 -->
 					<h3 class="panel-title">{{_ "add_post"}}</h3>
 				</div>
 				<div class="panel-body">
+					<!-- 使用aldeed:autoform包,快速生成一个插入Posts,可填title,content和picture的表格 -->
 					{{#autoForm id="add" collection="Posts" type="insert"}}
 					{{> afQuickField name="title"}}
 					{{> afQuickField name="content"}}
@@ -34,9 +37,11 @@
 
 <template name="posts">
 	<div class="template-posts">
+		<!-- 对应route文件中data:->获取的posts -->
 		{{#each posts}}
 		{{> post}}
 		{{else}}
+		<!-- 对应share里面的no_data.html里面的noData Template -->
 		{{> noData}}
 		{{/each}}
 	</div>
@@ -47,27 +52,34 @@
 		<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3 class="panel-title">
+						<!-- 父组件中each posts 后的post.title -->
 						{{title}}
 						<span class="pull-right">
+							<!-- 调用yogiben:favorites -->
 							<i class="fa fa-thumbs-up"></i> {{#with favoritesByDoc _id}}{{count}}{{/with}}
+							<!-- 调用yogiben:comments -->
 							<i class="fa fa-comments"></i> {{commentCount _id}}
 						</span>
 					</h3>
 				</div>
 				<div class="panel-body">
 					<p class="text-center">
+						<!-- getDoc是mongo获取bson数据函数 -->
 						{{#with getDoc picture 'Attachments'}}
 							<img src="{{url}}" class="img-thumbnail img-rounded">
 						{{/with}}
 					</p>
 					<div class="media">
 						<a class="pull-left" href="#">
+						<!-- avatar是头像库 -->
 							{{> avatar userId=owner shape="circle"}}
 						</a>
 						<div class="media-body">
 							<p>{{content}}</p>
+							<!-- 等同于if owner===User._id ,也就是当前用户不是帖子所有者不显示下面small里的内容-->
 							{{#if $eq owner User._id}}
 							<small>
+								<!-- yogiben:autoform-modals包的afModal,用于生成按钮并绑定按钮事件.下面的意思是更新对应_id的Posts内容,忽略createdAt,updatedAt,owner -->
 								{{#afModal title="Update post" omitFields="createdAt,updatedAt,owner" class="text-primary" collection="Posts" operation="update" doc=_id}}
 									<i class="fa fa-pencil" buttonContent="Edit post"></i> {{_ "edit_post"}}
 								{{/afModal}}
@@ -80,6 +92,7 @@
 					</div>
 				</div>
 				<div class="panel-footer">
+					<!-- 对应favorite包和comments包里面的按钮及按钮事件. -->
 					{{> favoriteButton _id=_id}}
 					{{> commentFormToggle }}
 					{{> comments}}
@@ -90,6 +103,7 @@
 
 <template name="favoritesSidebar">
 	<div class="template-favorites-sidebar">
+		<!-- 有favorite包发布,tracker.coffee里面订阅并自动跟踪的myFavorites数据集 -->
 		{{#if myFavorites.count}}
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -97,6 +111,7 @@
 			</div>
 			<div class="panel-body">
 				<ul>
+				<!-- 显示每个myFavorites的id -->
 				{{#each myFavorites}}
 					<li>
 						<a>{{_id}}</a>
