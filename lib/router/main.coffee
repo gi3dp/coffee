@@ -1,7 +1,7 @@
 Router.map ->
   @route "home",
     path: "/"
-    layoutTemplate: "homeLayout"
+    layoutTemplate: "layout"
 
   @route "dashboard",
     path: "/dashboard"
@@ -30,7 +30,12 @@ Router.map ->
 
   @route "newinformation",
     path: "/newinformation"
-    layoutTemplate: "Layout"
+    waitOn: ->
+      subs.subscribe 'news'
+      subs.subscribe 'attachments'
+    data: ->
+      news: News.find({},{sort: {createdAt: -1}}).fetch()
+    layoutTemplate: "layout"
 
   @route "cooperativePartner",
     path: "/cooperativePartner"

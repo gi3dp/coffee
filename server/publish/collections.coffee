@@ -4,5 +4,8 @@
 Meteor.publish 'posts', ->
 	Posts.find()
 
+Meteor.publish 'news', ->
+	News.find()
+
 Meteor.publish 'attachments', ->
 	Attachments.find()
