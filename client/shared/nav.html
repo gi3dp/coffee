@@ -4,13 +4,30 @@
             <div class="row">
                 <div class="col-sm-offset-1 col-sm-10">
                     <div class="nav-box">
-                        <ul class="nav nav-show">
-                            <li class="active" role="presentation"><a href="/">{{_ 'nav.mainPage'}}</a></li>
-                            <li id="nav-product" role="presentation"><a href="/product">{{_ 'nav.productCenter'}}</a></li>
-                            <li id="nav-cooperativePartner" role="presentation"><a href="/cooperativePartner">{{_ 'nav.cooperativePartner'}}</a></li>
-                            <li id="nav-customerService" role="presentation"><a href="/customerService">{{_ 'nav.customerService'}}</a></li>
+                        <ul class="nav-show">
+                            <li role="presentation"><a href="/">{{_ 'nav.mainPage'}}</a></li>
+                            <li id="nav-AI" role="presentation" style="display: none"><a href="/AIMakerSpace">AI Maker Space</a>
+                                <ul>
+                                    <li><a href="/AIMakerSpace">關於AIMS</a></li>
+                                    <li><a href="/support-TW">技術支持</a></li>
+                                </ul>
+                            </li>
+                            <li id="nav-product" role="presentation"><a href="/product">{{_ 'nav.productCenter'}}</a>
+                                <ul>
+                                    <li><a href="/product">全部产品</a></li>
+                                    <li><a href="#">3D打印机</a></li>
+                                    <li><a href="#">3D扫描仪</a></li>
+                                    <li><a href="#">周边及耗材</a></li>
+                                </ul>
+                            </li>
+                            <li id="nav-cooperativePartner" role="presentation"><a href="/partner">{{_
+                                    'nav.cooperativePartner'}}</a></li>
+                            <li id="nav-customerService" role="presentation"><a href="/customerService">{{_
+                                    'nav.customerService'}}</a></li>
+                            <li id="nav-customerService-TW" role="presentation" style="display: none"><a href="/customerService-TW">客戶服務</a></li>
                             <li role="presentation"><a href="/newinformation">{{_ 'nav.newinformation'}}</a></li>
-                            <li id="nav-community" role="presentation"><a href="/community">{{_ 'nav.community'}}</a></li>
+                            <li id="nav-community" role="presentation"><a href="/community">{{_
+                                    'nav.community'}}</a></li>
                             <li role="presentation"><a href="/aboutus">{{_ 'nav.aboutus'}}</a></li>
                         </ul>
                     </div>
@@ -29,6 +46,7 @@
             margin: auto;
             text-align: center;
         }
+
         .nav-box {
             float: none;
             display: inline-block;
@@ -36,6 +54,7 @@
             margin-right: auto;
             margin-top: 0;
         }
+
         .nav-show li {
             float: left;
         }

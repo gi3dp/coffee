@@ -1,4 +1,4 @@
-<template name="index">
+<template name="mainLayout">
     {{> banner }}
     <div id="main">
         <div class="container-fluid">
@@ -6,17 +6,17 @@
                 <h1 style="color: #02b8bf;">{{_ 'mainPage.h1.product'}}</h1>
                 <div class="point" style="background-color:#02b8bf"></div>
                 <div class="col-xs-offset-2 col-xs-8">
-                    {{> Template.dynamic template=products }}
+                    {{> productsList }}
                 </div>
             </div>
-            <div id="service" class="row" style="padding-top: 116px;padding-bottom: 160px;">
+            <div id="service" class="row" style="padding-top: 116px;padding-bottom: 100px">
                 <h1 style="color: #fff;">{{_ 'mainPage.h1.service'}}</h1>
                 <div class="point" style="background-color:white"></div>
                 <div class="col-xs-offset-2 col-xs-8">
                     <div class="col-md-6 col-sm-12" style="padding-left: 0!important;padding-right: 0!important;">
                         <div class="BG">
                             <div style="padding: 36px 70px;">
-                                <h2 style="padding: 25px">{{_ 'mainPage.service.printer'}}</h2>
+                                <h5 style="padding: 25px">{{_ 'mainPage.service.printer'}}</h5>
                                 <p>无 需 连 接 pc 即 可 完 成 进 丝 、 退 丝 、 脱 机 打 印 。</p>
                             </div>
                         </div>
@@ -24,7 +24,7 @@
                     <div class="col-md-6 col-sm-12" style="padding-left: 0!important;padding-right: 0!important;">
                         <div class="BG">
                             <div style="padding: 36px 70px">
-                                <h2 style="padding: 25px">{{_ 'mainPage.service.Tutorials'}}</h2>
+                                <h5 style="padding: 25px">{{_ 'mainPage.service.Scan'}}</h5>
                                 <p> 针 对 使 用 3D 设 备 中 的 产 生 的 问 題 拾 予 技 术 支 持 ， 让 你 轻 松 在 家 学 3D 。</p>
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                     <div class="col-md-6 col-sm-12" style="padding-left: 0!important;padding-right: 0!important;">
                         <div class="BG">
                             <div style="padding: 36px 70px">
-                                <h2 style="padding: 25px">{{_ 'mainPage.service.Training'}}</h2>
+                                <h5 style="padding: 25px">{{_ 'mainPage.service.Training'}}</h5>
                                 <p>如 果 你 觉 得 动 手 学 习 更 能 锻 炼 你 的 能 力 , 那 这 就 是 你 想 要 的 解 决 方 式 。</p>
                             </div>
                         </div>
@@ -40,7 +40,7 @@
                     <div class="col-md-6 col-sm-12" style="padding-left: 0!important;padding-right: 0!important;">
                         <div class="BG">
                             <div style="padding: 36px 70px">
-                                <h2 style="padding: 25px">{{_ 'mainPage.service.Scan'}}</h2>
+                                <h5 style="padding: 25px">{{_ 'mainPage.service.Tutorials'}}</h5>
                                 <p>基 于 视 频 数 据 捕 捉 的 三 维 摄 影 系 统 ， 在 扫 描 过 程 中 ， 通 过 红 外 光 投 光 ，从 测 量 镜 头 获 得 彩 色 点 云 数 据 。</p>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                     <div class="col-md-6 col-sm-12" style="padding-left: 0!important;padding-right: 0!important;">
                         <div class="BG">
                             <div style="padding: 36px 70px">
-                                <h2 style="padding: 25px">{{_ 'mainPage.service.Software'}}</h2>
+                                <h5 style="padding: 25px">{{_ 'mainPage.service.Software'}}</h5>
                                 <p>对 3D 设 计 或 者 扫 描 据 进 行 快 速 的 修 补 优 化 以 及 整 含 等 操 作 。</p>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                     <div class="col-md-6 col-sm-12" style="padding-left: 0!important;padding-right: 0!important;">
                         <div class="BG">
                             <div style="padding: 36px 70px">
-                                <h2 style="padding: 25px">{{_ 'mainPage.service.buy'}}</h2>
+                                <h5 style="padding: 25px">{{_ 'mainPage.service.buy'}}</h5>
                                 <p>不 出 门 就 能 够 购 买 到 好 的 3D 产 品 ， 包 括 3D 打 印 机 以 及 周 边 产 品 。
                                 </p>
                             </div>
@@ -69,20 +69,20 @@
                     <div class="col-sm-offset-2 col-sm-8">
                         <div class="service-num">
                             <div class="col-md-3 col-sm-6">
-                                <h2>15</h2>
-                                <h3>优质的服务团队</h3>
+                                <h1>4</h1>
+                                <h5>{{_ 'mainPage.service-num.h3.team'}}</h5>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                                <h2>1</h2>
-                                <h3>1对1的高质量服务</h3>
+                                <h1>1</h1>
+                                <h5>{{_ 'mainPage.service-num.h3.121'}}</h5>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                                <h2>26</h2>
-                                <h3>多种教程</h3>
+                                <h1>n</h1>
+                                <h5>{{_ 'mainPage.service-num.h3.tutorials'}}</h5>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                                <h2>12</h2>
-                                <h3>快捷的购买方式</h3>
+                                <h1>3</h1>
+                                <h5>{{_ 'mainPage.service-num.h3.shopping'}}</h5>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                 <h1 style="color: #02b8bf;">{{_ 'mainPage.h1.new'}}</h1>
                 <div class="point" style="background-color:#02b8bf"></div>
                 <div class="col-xs-offset-2 col-xs-8">
-                    {{> Template.dynamic template=news }}
+                    {{> newsList }}
                 </div>
             </div>
             <div id="application" class="row" style="padding-top: 116px;padding-bottom: 160px;">
@@ -100,25 +100,37 @@
                 <div class="point" style="background-color:white"></div>
                 <div class="col-xs-offset-2 col-xs-8">
                     <div class="col-sm-4">
-                        <img class="img-responsive" src="images/application 1.jpg" alt="">
+                        <img class="img-circle img-thumbnail" src="images/application 1.jpg" alt="">
                         <h3 style="padding: 10px 0">3D打印集成系统</h3>
                     </div>
                     <div class="col-sm-4">
-                        <img class="img-responsive" src="images/application 2.jpg" alt="">
+                        <img class="img-circle img-thumbnail" src="images/application 2.jpg" alt="">
                         <h3 style="padding: 10px 0">Meshmixer基础教学</h3>
                     </div>
                     <div class="col-sm-4">
-                        <img class="img-responsive" src="images/application 3.jpg" alt="">
+                        <img class="img-circle img-thumbnail" src="images/application 3.jpg" alt="">
                         <h3 style="padding: 10px 0">Tinkercad基础教学</h3>
                     </div>
                 </div>
             </div>
-            <div id="contact" class="row" style="padding-top: 116px;padding-bottom: 160px;">
-                <h1 style="color: #02b8bf;">关于我们</h1>
+            <div id="contact" class="row" style="padding-bottom: 160px;">
+                <h1 style="margin-top: 116px;margin-bottom: 36px;color: #02b8bf;">{{_ 'nav.aboutus'}}</h1>
+
                 <div class="col-xs-offset-2 col-xs-8">
                     <div class="point" style="background-color:#02b8bf"></div>
                     <div class="col-sm-6">
-                        <img class="img-responsive" src="images/about.jpg" alt="">
+                        <div style="background-color:#7fc4c6;">
+                            <video
+                                    id="example_video_1"
+                                    class="video-js vjs-default-skin vjs-big-play-centered"
+                                    controls
+                                    preload="auto"
+                                    width="100%" height="285"
+                                    poster="http://peek.space/art/earth-lights-lrg/full.jpg"
+                                    data-setup="{}">
+                                <source src="video/First Look at Nintendo Switch.mp4" type='video/mp4' />
+                            </video>
+                        </div>
                     </div>
                     <div class="col-sm-6">
                         <div style="padding-right: 38px">

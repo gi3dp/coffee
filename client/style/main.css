@@ -47,7 +47,7 @@ p{word-wrap:break-word}
     padding-bottom: 30px;
     background-color:#07bc83;
     border-bottom: none;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 .service-num{
     text-align: center;
@@ -84,14 +84,18 @@ p{word-wrap:break-word}
 }
 #service{
     text-align: center;
-    background-color: #1c5373;
+    /*background-color: #1c5373;*/
     margin: auto;
     /*padding-bottom: 15px;*/
+    background-image: url("images/service.jpg");
+    background-repeat:no-repeat;
     color: #ffffff;
 }
 #application{
     text-align: center;
-    background-color: #1c5373;
+    /*background-color: #1c5373;*/
+    background-image: url("images/application.jpg");
+    background-repeat:no-repeat;
     margin: auto;
     color: #ffffff;
     font-weight: bold;
@@ -104,8 +108,10 @@ p{word-wrap:break-word}
     font-weight: 500;
 }
 .BG{
-    background-color: rgba(87,135,162,0.4);
+    /*background-color: rgba(87,135,162,0.6);*/
+    background-color: rgba(100,200,255,0.4);
     margin: 16px 5px;
+    height: 250px;
 }
 #box-news{
     margin: auto;

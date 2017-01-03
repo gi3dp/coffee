@@ -9,7 +9,7 @@
 @font-color-deep:#fff!important;                                       //深色背景文字颜色
 @footer-title-font-color: #D8D5D5;
 //间距
-@nav-padding:20px 20px;                                                 //导航间距
+@nav-padding:20px 30px;                                                 //导航间距
 //字号
 //@base-font-family:'Microsoft YaHei',SimSun,Verdana,simsun,sans-serif; //云南基本字体
 //@taiwan-base-font-family:'Microsoft JhengHei',SimSun，Verdana,sans-serif; //台湾基本字体
@@ -19,26 +19,39 @@
 @title-font-size:36px!important;                                        //文章标题字体大小
 @summary-font-size:16px!important;                                      //文章正文字体大小
 @icon-font-size:14px!important;                                        //icon字体大小
-@h1-font-size:60px!important;                                           //网页标题字体大小
+@h1-font-size:48px!important;                                           //网页标题字体大小
+@h5-font-size:24px!important;
 
 #header{
     background-color: @base-color;
 }
 #nav{
     background-color: @nav-color;
+    text-align: center;
     li{
         font-size:@nav-font-size;
+        color:@font-color-deep;
         a{
             color:@font-color-deep;
-            padding:@nav-padding;
+            text-decoration: none;
+        }
+    }
+}
+.nav-box{
+    li{
+        float: left;
+        a{
+            display: block;
+            width: 150px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             &:hover{
-                color:@font-color-deep;
+                display: block;
                 background-color:@nav-a-color;
             }
-            &:focus{
-                color:@font-color-deep;
-                background-color:@nav-a-color;
-            }
+        }
+        ul{
+            display: none;
         }
     }
 }
@@ -55,10 +68,12 @@
         }
     }
 }
-#product,#news,#service,#customerService,#AboutUs,#contact,#application{
+#product,#news,#service,#customerService,#AboutUs,#contact,#application,#partner,#customerService-TW,#AIMakerSpace{
+    text-align:center;
     h1{
         font-size:@h1-font-size;
         //margin-top: 116px;
+        font-weight: normal!important;
         margin-bottom: 36px;
     }
     h2{
@@ -74,5 +89,38 @@
     p{
         font-size:@summary-font-size;
     }
+    h5{
+        margin: 0!important;
+        font-size: @h5-font-size;
+    }
 }
 
+#nav-product,#nav-AI{
+    position: relative;
+    ul{
+        //text-align: center;
+        display: none;
+        z-index: 1;
+        //text-decoration: none;
+        li{
+            border-bottom: #99c 1px solid;
+            border-right: none;
+            //a{
+            //    text-decoration: none;
+            //}
+        }
+    }
+    &:hover,&:visited{
+        ul{
+            display: block;
+            position: absolute;
+            background-color:#0d347e;
+            //a{
+            //        &:hover{
+            //            color:@font-color-deep;
+            //            background-color:@nav-a-color;
+            //    }
+            //}
+        }
+    }
+}
