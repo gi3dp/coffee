@@ -1,41 +1,5 @@
 <template name="product">
     <style>
-        .backnew{
-            color: #4291d4;
-            padding:1% 0px 0px 6%;
-        }
-        .backnew:hover{
-            color: #1c3681;
-        }
-        .allproduct{
-            color: #4291d4;
-            padding:7% 0px 0px 6%;
-        }
-        .allproduct:hover{
-            color: #1c3681;
-        }
-        .producttop{
-            color:#4291d4;
-            line-height: 30px;
-        }
-        .producttop:hover{
-            color: #1c3681;
-        }
-        #product11a{
-            background-color: #0f0f0f;
-            padding: 0px;
-            margin:0px;
-        }
-        #product11b{
-            background-color:#2a6496;
-            padding: 0px;
-            margin:0px;
-        }
-        #product11c{
-            background-color:#4cae4c;
-            padding: 0px;
-            margin:0px;
-        }
         .nostyle{
             margin: 0px;
             padding: 0px
@@ -46,115 +10,90 @@
             line-height: 35px;
             font-family: 微软雅黑;
         }
+        .product1aw{
+            height: 296px;
+            margin-top: 5px;
+            text-align: center;
+        }
     </style>
     <div id="product">
         <div class="container-fruid">
-            <!--<div clas="row">-->
-                <!--<div class="hidden-lg hidden-md hidden-sm col-xs-3 producttop nostyle">全部产品</div>-->
-                <!--<div class="hidden-lg hidden-md hidden-sm col-xs-3 producttop nostyle">3D打印机</div>-->
-                <!--<div class="hidden-lg hidden-md hidden-sm col-xs-3 producttop nostyle">3D扫描仪</div>-->
-                <!--<div class="hidden-lg hidden-md hidden-sm col-xs-3 producttop nostyle">周边及耗材</div>-->
-            <!--</div>-->
             <div class="row nostyle">
-                <!--<div class="col-md-1 hidden-sm hidden-xs nostyle" ></div>-->
-                <!--<div class="col-md-2 col-sm-3 hidden-xs nostyle" >-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-2 col-sm-4 nostyle" style="text-align: right;">-->
-                            <!--<img src="images/lefttop.png"/>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-7 col-sm-8 backnew">-->
-                            <!--<a href="{{pathFor '/main/:id' id=_id}}">Back</a>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="row" style="height: 18px"></div>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-2  col-sm-4" style="text-align: right;padding: 0px">-->
-                            <!--<img src="images/left1.png"/>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-7 col-sm-8" style="color: #4291d4;padding:1% 0px 0px 6%;"></div>-->
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-2 col-sm-4" style="text-align: right;padding: 0px">-->
-                            <!--<img src="images/left2.png"/>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-7 col-sm-8 allproduct" >全部产品</div>-->
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-2 col-sm-4" style="text-align: right;padding: 0px">-->
-                            <!--<img src="images/left2.png"/>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-7 col-sm-8 allproduct" >3D打印机</div>-->
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-2 col-sm-4" style="text-align: right;padding: 0px">-->
-                            <!--<img src="images/left2.png"/>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-7 col-sm-8 allproduct" >3D扫描仪</div>-->
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-2  col-sm-4" style="text-align: right;padding: 0px">-->
-                            <!--<img src="images/left2.png"/>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-7 col-sm-8 allproduct" >周边及耗材</div>-->
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-2  col-sm-4" style="text-align: right;padding: 0px">-->
-                            <!--<img src="images/left3.png"/>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-7 col-sm-8" style="color: #4291d4;padding:1% 0px 0px 6%;"></div>-->
-                    <!--</div>-->
-                <!--</div>-->
                 <div class="col-md-offset-2 col-md-8 col-sm-9 col-xs-12" >
-                    <!--<div class="row nostyle">-->
-                        <div class="col-xs-12 nostyle" id="productwhere">
-                            <ol class="breadcrumb">
-                                <li><span class="glyphicon glyphicon-home"><a href="#"><h4>产品中心</h4></a></span></li>
-                                <li><span class="glyphicon glyphicon-play"><a href="#"><h4>全部产品</h4></a></span></li>
-                            </ol>
-                        </div>
-                        <div class="row nostyle" style="margin-bottom: 15px" >
-                            <div class="col-xs-7 nostyle">
-                                <div class="row nostyle" >
-                                    <div class="col-xs-12 nostyle"  >
-                                        <a href="{{pathFor '/product/:id/productDet/:cid' id=_id cid=productDet._id}}">
-                                            <img class="img-responsive" src="images/product1a.png" />
-                                        </a>
-
-                                    </div>
-                                </div>
-                                <div class="row nostyle">
-                                    <div class="col-xs-6 nostyle"  >
-                                        <img class="img-responsive  nostyle" src="images/product1b.png" >
-                                    </div>
-                                    <div class="col-xs-6 nostyle " >
-                                        <img class="img-responsive nostyle " src="images/product1c.png" >
-                                    </div>
+                    <div class="col-xs-12 nostyle" id="productwhere">
+                        <ol class="breadcrumb">
+                            <li><span class="glyphicon glyphicon-home"><a href="#"><h4>产品中心</h4></a></span></li>
+                            <li><span class="glyphicon glyphicon-play"><a href="#"><h4>全部产品</h4></a></span></li>
+                        </ol>
+                    </div>
+                    <div class="row nostyle" style="margin-bottom: 15px" >
+                        <div class="col-sm-7 nostyle">
+                            <div class="row nostyle" id="onerowfirst" >
+                                <div class="col-xs-12 nostyle" style="height: 298px;"  >
+                                    <div style="margin-top: 10px"><h2>创意设计软件</h2></div>
+                                    <div><h3>Tinkercad</h3></div>
+                                    <div>了解更多》</div>
+                                    <div><img src="/images/tinkercad.png"/></div>
                                 </div>
                             </div>
-                            <div class="col-xs-5 nostyle ">
-                                <img class="img-responsive" src="images/product1d.png">
-                            </div>
-                        </div>
-                        <div class="row nostyle" style="margin-bottom: 15px" >
-                            <div class="col-xs-5 nostyle ">
-                                <img class="img-responsive" src="images/product1d.png">
-                            </div>
-                            <div class="col-xs-7 nostyle">
-                                <div class="row nostyle" >
-                                    <div class="col-xs-12 nostyle " >
-                                        <img class="img-responsive" src="images/product1a.png" />
-                                    </div>
+                            <div class="row nostyle">
+                                <div class="col-xs-6 nostyle" style="height: 298px;"  >
+                                    <div style="margin-top: 10px"><h2>耗材</h2></div>
+                                    <div><h3>PLA玉米淀粉提炼，无毒环保材料</h3></div>
+                                    <div>了解更多》</div>
+                                    <div><img src="/images/PLA.png"/></div>
                                 </div>
-                                <div class="row nostyle">
-                                    <div class="col-xs-6 nostyle" >
-                                        <img class="img-responsive" src="images/product1b.png" >
-                                    </div>
-                                    <div class="col-xs-6 nostyle " >
-                                        <img class="img-responsive" src="images/product1c.png" >
-                                    </div>
+                                <div class="col-xs-6 nostyle " style="height: 298px;"  >
+                                    <div style="margin-top: 10px"><h2>工具配件组</h2></div>
+                                    <div><h3>斜口钳、尖嘴钳、雕刻刀</h3></div>
+                                    <div>了解更多》</div>
+                                    <div><img src="/images/tool.png"/></div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-5 nostyle " style="height: 596px;">
+                            <div style="margin-top: 30px"><h2>GEO-3DP</h2></div>
+                            <div><h3>别创新格 摩登靓颖</h3></div>
+                            <div>了解更多》</div>
+                            <div style="margin-top: 50px"><img src="/images/3DP.png"/></div>
+                        </div>
+                    </div>
+                    <div class="row nostyle" style="margin-bottom: 15px" >
+                        <div class="col-sm-5 nostyle " style="height: 596px;">
+                            <div style="margin-top: 160px"><h2>GEO-GVX</h2></div>
+                            <div><h3>精确扫描 完美呈现</h3></div>
+                            <div>了解更多》</div>
+                            <div style="margin-top: 20px"><img src="/images/gvx.png"/></div>
+                        </div>
+                        <div class="col-sm-7 nostyle">
+                            <div class="row nostyle" >
+                                <div class="col-xs-12 nostyle " style="height: 298px;" >
+                                    <div class="row nostyle">
+                                        <div class="col-xs-6 nostyle" >
+                                            <div style="margin-top: 100px"><h2>支架</h2></div>
+                                            <div><h3>安装简单 使用便利</h3></div>
+                                            <div>了解更多》</div>
+                                        </div>
+                                        <div class="col-xs-6 nostyle img-responsive"><img src="/images/bracket.png"/></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row nostyle">
+                                <div class="col-xs-6 nostyle" style="height: 298px;">
+                                    <div style="margin-top: 10px"><h2>创意设计软件</h2></div>
+                                    <div><h3>Meshmixer</h3></div>
+                                    <div>了解更多》</div>
+                                    <div><img src="/images/Meshmixer.png"/></div>
+                                </div>
+                                <div class="col-xs-6 nostyle "  style="height: 298px;" >
+                                    <div style="margin-top: 10px"><h2>转盘</h2></div>
+                                    <div><h3>功能简约 使用方便</h3></div>
+                                    <div>了解更多》</div>
+                                    <div style="margin-top: 30px"><img src="/images/turntable.png"/></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!--</div>-->
                 </div>
             </div>

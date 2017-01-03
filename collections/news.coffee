@@ -31,6 +31,16 @@ Schemas.News = new SimpleSchema
 				type: 'fileUpload'
 				collection: 'Attachments'
 
+	category:
+		type: String
+		autoform:
+			type:'select-radio-inline'
+			options: ->
+				[
+					{label:'公司动态',value:'companyNews'}
+					{label:'行业资讯',value:'industryNews'}
+				]
+
 	owner:
 		type: String
 		regEx: SimpleSchema.RegEx.Id

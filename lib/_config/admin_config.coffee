@@ -17,6 +17,12 @@
 				{ label: 'Title', name: 'title' }
 				{ label: 'User', name: 'author()', template: 'adminUserCell' }
 			]
+		Products:
+			color: 'blue'
+			icon: 'shopping-bag'
+			tableColumns: [
+				{ label: '产品名字', name: 'name' }
+			]
 		Comments:
 			color: 'green'
 			icon: 'comments'
