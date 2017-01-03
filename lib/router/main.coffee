@@ -13,3 +13,42 @@ Router.map ->
       ]
     data: ->
       posts: Posts.find({},{sort: {createdAt: -1}}).fetch()
+
+#migrate from old Router.
+#index对应模板名字．path对应url,layoutTemplate对应模板(header,nav,footer组合的)
+  @route "index",
+    path: "/index"
+    layoutTemplate: "layout"
+
+  @route "product",
+    path: "/product"
+    layoutTemplate: "layout"
+
+  @route "customerService",
+    path: "/customerService"
+    layoutTemplate: "Layout"
+
+  @route "newinformation",
+    path: "/newinformation"
+    layoutTemplate: "Layout"
+
+  @route "cooperativePartner",
+    path: "/cooperativePartner"
+    layoutTemplate: "Layout"
+
+  @route "community",
+    path: "/community"
+    layoutTemplate: "Layout"
+
+  @route "aboutus",
+    path: "/aboutus"
+    layoutTemplate: "layout"
+
+  @route "informationDet",
+    path: "/newinformation/informationDet"
+    layoutTemplate: "Layout"
+
+  @route "informationpage",
+    path: "/newinformation/:_id"
+    data:-> Newinformation.findOne(this.params.__id)
+    # layoutTemplate: ""

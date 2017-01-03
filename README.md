@@ -3,8 +3,6 @@ Meteor Starter
 
 A Meteor boilerplate with a lot packed in. Written in Coffeescript.
 
-[Demo](http://starter.meteor.com) - For admin, log in with: `starter@meteorfactory.io` and `meteorrocks`
-
 [Tutorials](http://learn.meteorfactory.io/meteor-starter/)
 
 [MIT License](http://choosealicense.com/licenses/mit/)
@@ -43,11 +41,11 @@ meteor
 Detailed tutorails coming soon.
 
 First steps:
-* Edit basic setting in `/both/_config/_config.coffee`
+* Edit basic setting in `/lib/_config/_config.coffee`
 * Delete / modify HTML in `/client/views/home.html`
 * Update colors in `/client/style/bootstrap-variables.less`
-* Add / edit collections in `/both/collections/`
-* Create routes and views in `/both/router.coffee` and `/client/views` folder
+* Add / edit collections in `/collections/`
+* Create routes and views in `/lib/router/router.coffee` and `/client/views` folder
 
 ### Docker ###
 Dockerize it

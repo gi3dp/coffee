@@ -1,0 +1,78 @@
+//基本色调
+@base-color:#fff!important;                                           //页面基本配色
+@nav-color:#2e3238!important;                                           //导航栏基本配色
+@nav-a-color:#0d347e!important;                                         //导航栏悬停颜色
+@drapdown-color:#0d347e!important;                                      //下拉菜单基本配色
+@footer-color:#2e3238!important;                                        //底部颜色
+//字体颜色
+@font-color-light:#323232!important;                                    //浅色背景文字颜色
+@font-color-deep:#fff!important;                                       //深色背景文字颜色
+@footer-title-font-color: #D8D5D5;
+//间距
+@nav-padding:20px 20px;                                                 //导航间距
+//字号
+//@base-font-family:'Microsoft YaHei',SimSun,Verdana,simsun,sans-serif; //云南基本字体
+//@taiwan-base-font-family:'Microsoft JhengHei',SimSun，Verdana,sans-serif; //台湾基本字体
+
+@nav-font-size:18px!important;                                          //导航字体大小
+@footer-font-size:14px!important;                                       //底部正文字体
+@title-font-size:36px!important;                                        //文章标题字体大小
+@summary-font-size:16px!important;                                      //文章正文字体大小
+@icon-font-size:14px!important;                                        //icon字体大小
+@h1-font-size:60px!important;                                           //网页标题字体大小
+
+#header{
+    background-color: @base-color;
+}
+#nav{
+    background-color: @nav-color;
+    li{
+        font-size:@nav-font-size;
+        a{
+            color:@font-color-deep;
+            padding:@nav-padding;
+            &:hover{
+                color:@font-color-deep;
+                background-color:@nav-a-color;
+            }
+            &:focus{
+                color:@font-color-deep;
+                background-color:@nav-a-color;
+            }
+        }
+    }
+}
+#footer{
+    background-color:@footer-color;
+    color: @base-color;
+    h3{
+        color: @footer-title-font-color;
+    }
+    li{
+        color:@base-color;
+        a{
+            color:@base-color;
+        }
+    }
+}
+#product,#news,#service,#customerService,#AboutUs,#contact,#application{
+    h1{
+        font-size:@h1-font-size;
+        //margin-top: 116px;
+        margin-bottom: 36px;
+    }
+    h2{
+        font-size:@title-font-size;
+    }
+    h3{
+        font-size:@summary-font-size;
+    }
+    h4{
+        font-size: @icon-font-size;
+        display: inline;
+    }
+    p{
+        font-size:@summary-font-size;
+    }
+}
+

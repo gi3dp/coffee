@@ -8,7 +8,8 @@ Schemas.Posts = new SimpleSchema
 	content:
 		type: String
 		autoform:
-			rows: 5
+			afFieldInput:
+				type: 'summernote'
 
 	createdAt:
 		type: Date

@@ -1,0 +1,27 @@
+{
+  "nav":{
+    "mainPage":"首页",
+    "productCenter":"产品中心",
+    "cooperativePartner":"合作伙伴",
+    "customerService":"客户服务",
+    "newinformation":"新闻动态",
+    "community":"恒达社区",
+    "aboutus":"关于我们"
+  },
+  "mainPage":{
+    "h1":{
+      "new":"新闻资讯",
+      "product":"产品中心",
+      "service":"客户服务",
+      "application":"教学应用"
+    },
+    "service":{
+      "printer":"3D打印机",
+      "Tutorials":"线上课程",
+      "Training":"线下培训",
+      "Scan":"扫描仪",
+      "Software":"软件",
+      "buy":"购买"
+    }
+  }
+}

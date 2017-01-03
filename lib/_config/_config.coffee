@@ -21,9 +21,9 @@
 
 	# Username - if true, users are forced to set a username
 	username: false
-	
+
 	# Localisation
-	defaultLanguage: 'en'
+	defaultLanguage: 'cn'
 	dateFormat: 'D/M/YYYY'
 
 	# Meta / Extenrnal content
@@ -54,6 +54,6 @@
 			icon: 'link'
 
 	#Routes
-	homeRoute: '/'
+	homeRoute: '/index'
 	publicRoutes: ['home']
 	dashboardRoute: '/dashboard'
